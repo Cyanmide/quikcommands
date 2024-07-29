@@ -32,7 +32,8 @@ EOL
 chmod +x "$XSTARTUP_FILE"
 
 # Start ngrok tunnel
-ngrok http https://127.0.0.1:8444
+vncserver
 
 # Start VNC server
-vncserver
+ngrok http https://127.0.0.1:8444
+
